@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	verde("Gianni")
+	verde("Carla")
+}
+func verde(algo string) {
+	var saludo string = "Hola " + algo
+	var largo int = len(algo)
+	var esPar bool = largo%2 == 0
+
+	if esPar {
+		saludo = saludo + "!"
+
+	}
+	fmt.Println(saludo)
+}
