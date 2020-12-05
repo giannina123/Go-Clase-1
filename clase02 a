@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	frase := "Quiero aprender a programar"
+
+	recorrerFrase(frase)
+}
+
+func recorrerFrase(frase string) {
+	var indice int = 0
+	var tamaño int = len(frase)
+
+	for indice < tamaño {
+		fmt.Println(frase[indice])
+		indice = indice + 1
+	}
+}
